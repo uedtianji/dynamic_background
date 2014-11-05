@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<style>
+		body,html{
+			margin: 0;
+			padding: 0; 
+			width: 100%; 
+			height: 100%;
+		}
+		.dynbg{
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			width: 100%; 
+			height: 100%;
+		}
+		.dynbg__bg{
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			-webkit-transition:all 1s linear;
+			-moz-transition:all 1s linear;
+			width: 100%;
+			height: 100%;
+			background-size: 100% 100%;
+		}
+		.dynbg__bg0{
+			background-repeat: repeat;
+			background: -webkit-radial-gradient(rgba(255,255,255,0.4) 5%, transparent 10%);
+			background: -moz-radial-gradient(rgba(255,255,255,0.4) 5%, transparent 10%);
+			background-size: 16px 16px;
+			z-index: 5;
+		}
+		.dynbg__bg1{
+			background:-moz-radial-gradient(80% 20%,farthest-side, #edbf47, #D58123);
+			background:-webkit-radial-gradient(80% 20%,farthest-side, #edbf47, #D58123);
+			z-index: 4;
+			-webkit-animation:dynbg__ani1 infinite 8s;
+			-moz-animation:dynbg__ani1 infinite 8s;
+		}
+		.dynbg__bg2{
+			background:-moz-radial-gradient(80% 80%,farthest-side, #edbf47, #D58123);
+			background:-webkit-radial-gradient(80% 80%,farthest-side, #edbf47, #D58123);
+			z-index: 3;
+			-webkit-animation:dynbg__ani2 infinite 8s;
+			-moz-animation:dynbg__ani2 infinite 8s;
+		}
+		.dynbg__bg3{
+			background:-moz-radial-gradient(20% 80%,farthest-side, #edbf47, #D58123);
+			background:-webkit-radial-gradient(20% 80%,farthest-side, #edbf47, #D58123);
+			z-index: 2;
+			-webkit-animation:dynbg__ani3 infinite 8s;
+			-moz-animation:dynbg__ani3 infinite 8s;
+		}
+		.dynbg__bg4{
+			background:-moz-radial-gradient(20% 20%,farthest-side, #edbf47, #D58123);
+			background:-webkit-radial-gradient(20% 20%,farthest-side, #edbf47, #D58123);
+			z-index: 1;
+		}
+		@-webkit-keyframes dynbg__ani1{
+			0%{
+				opacity: 1;
+			}
+			16.6667%{
+				opacity: 0;
+			}
+			33.3333%{
+				opacity: 0;
+			}
+			50%{
+				opacity: 0;
+			}
+			66.6667%{
+				opacity: 0;
+			}
+			83.3333%{
+				opacity: 0;
+			}
+			100%{
+				opacity: 1;
+			}
+		}
+		@-webkit-keyframes dynbg__ani2{
+			0%{
+				opacity: 1;
+			}
+			16.6667%{
+				opacity: 1;
+			}
+			33.3333%{
+				opacity: 0;
+			}
+			50%{
+				opacity: 0;
+			}
+			66.6667%{
+				opacity: 0;
+			}
+			83.3333%{
+				opacity: 1;
+			}
+			100%{
+				opacity: 1;
+			}
+		}
+		@-webkit-keyframes dynbg__ani3{
+			0%{
+				opacity: 1;
+			}
+			16.6667%{
+				opacity: 1;
+			}
+			33.3333%{
+				opacity: 1;
+			}
+			50%{
+				opacity: 0;
+			}
+			66.6667%{
+				opacity: 1;
+			}
+			83.3333%{
+				opacity: 1;
+			}
+			100%{
+				opacity: 1;
+			}
+		}
+		@-moz-keyframes dynbg__ani1{
+			0%{
+				opacity: 1;
+			}
+			16.6667%{
+				opacity: 0;
+			}
+			33.3333%{
+				opacity: 0;
+			}
+			50%{
+				opacity: 0;
+			}
+			66.6667%{
+				opacity: 0;
+			}
+			83.3333%{
+				opacity: 0;
+			}
+			100%{
+				opacity: 1;
+			}
+		}
+		@-moz-keyframes dynbg__ani2{
+			0%{
+				opacity: 1;
+			}
+			16.6667%{
+				opacity: 1;
+			}
+			33.3333%{
+				opacity: 0;
+			}
+			50%{
+				opacity: 0;
+			}
+			66.6667%{
+				opacity: 0;
+			}
+			83.3333%{
+				opacity: 1;
+			}
+			100%{
+				opacity: 1;
+			}
+		}
+		@-moz-keyframes dynbg__ani3{
+			0%{
+				opacity: 1;
+			}
+			16.6667%{
+				opacity: 1;
+			}
+			33.3333%{
+				opacity: 1;
+			}
+			50%{
+				opacity: 0;
+			}
+			66.6667%{
+				opacity: 1;
+			}
+			83.3333%{
+				opacity: 1;
+			}
+			100%{
+				opacity: 1;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="wrp">
+		<div class="dynbg">
+			<div class="dynbg__bg dynbg__bg0"></div>
+			<div class="dynbg__bg dynbg__bg1"></div>
+			<div class="dynbg__bg dynbg__bg2"></div>
+			<div class="dynbg__bg dynbg__bg3"></div>
+			<div class="dynbg__bg dynbg__bg4"></div>
+		</div>
+		
+	</div>
+	
+</body>
+</html>
