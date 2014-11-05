@@ -4,7 +4,7 @@ dynamic_background
 ####动态背景  
 利用多层背景的交替淡入淡出，实现一种背景在不停变换的效果，先看图。
 效果图：  
-![效果图](https://raw.githubusercontent.com/zhaokenger/dynamic_background/master/img/1.gif)  
+![效果图](https://raw.githubusercontent.com/uedtianji/dynamic_background/master/img/1.gif)  
 [DEMO地址](http://cssdeck.com/labs/collab/9fz8mhu9)  
 
 #####步骤
@@ -24,7 +24,7 @@ dynamic_background
 	background:-webkit-radial-gradient(80% 20%,farthest-side, #edbf47, #D58123);
 }
 ```
-![效果图](https://raw.githubusercontent.com/zhaokenger/dynamic_background/master/img/1-1.jpg)  
+![效果图](https://raw.githubusercontent.com/uedtianji/dynamic_background/master/img/1-1.jpg)  
 [在线代码](http://cssdeck.com/labs/uxdoorq0)  
 
 2.重复第一步创建4个拥有不同的渐变背景的DIV。渐变中心点的位置分别为```80% 20%``` ```80% 80%``` ```20% 80%``` ```20% 20%```   
@@ -59,7 +59,7 @@ dynamic_background
 }
 ```  
 四个div的效果  
-![效果图](https://raw.githubusercontent.com/zhaokenger/dynamic_background/master/img/2.jpg)  
+![效果图](https://raw.githubusercontent.com/uedtianji/dynamic_background/master/img/2.jpg)  
 
 3.将四个div按顺序叠加摆放，并依照顺序将div的透明度由1变为0再变为1。最后一个div的透明度不需要变，所以一个需要变化3个div，每个div的变化有两个状态，所以一共有6个状态。我们将100%除以6，分成0%,16.6667%,33.3333%,50%,66.6667%,83.3333%,100%。每个div在不同阶段的状态如下。  
 ```css
@@ -165,7 +165,7 @@ dynamic_background
 >animation的使用方法可以参考[这里](http://www.w3cplus.com/content/css3-animation)  
 
 
-![效果图](https://raw.githubusercontent.com/zhaokenger/dynamic_background/master/img/3.gif)  
+![效果图](https://raw.githubusercontent.com/uedtianji/dynamic_background/master/img/3.gif)  
 
 4.最后在最上面加上一层平铺的半透明的点来增加质感。  
 ```css
@@ -177,7 +177,7 @@ dynamic_background
 	z-index: 5;
 }
 ```  
-![效果图](https://raw.githubusercontent.com/zhaokenger/dynamic_background/master/img/1.gif)  
+![效果图](https://raw.githubusercontent.com/uedtianji/dynamic_background/master/img/1.gif)  
 [在线代码](http://cssdeck.com/labs/collab/9fz8mhu9)  
 
 ###如有问题或者建议请微博<a href="http://weibo.com/uedtianji" target="_blank">@UED天机</a>。我会及时回复
