@@ -187,3 +187,6 @@ dynamic_background
 
 ####相关阅读  
 1.[波浪状动态背景](https://github.com/cyclegtx/wave_background)
+
+
+更多教程请访问：[ued.sexy](http://ued.sexy)  
